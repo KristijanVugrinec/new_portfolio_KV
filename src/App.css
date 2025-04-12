@@ -1,0 +1,25 @@
+body {
+  background-color: #c3c3c3 ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+main {
+  width: 1600px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.911);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: 4px outset rgb(131, 131, 131);
+}
+
+h1 {
+  font-family:"Jacquard 12", system-ui;
+  font-weight: 400;
+  font-size: 280px;
+  margin: 0;
+}

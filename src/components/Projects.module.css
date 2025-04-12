@@ -1,0 +1,67 @@
+.main {
+    width: 30%;
+    border: 4px outset rgb(131, 131, 131);
+    margin-bottom: 10px;
+    height: 250px;
+}
+
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    background-color:#010081;
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    gap: 75%;
+}
+
+.bar p {
+    margin-left: 3%;
+}
+
+.projectsFolder {
+    margin-left: 10px;
+}
+.projectsFolder p {
+    font-family: "MS Sans Serif";
+    color:#010081;
+    margin: 0;
+}
+.projectsFolder img {
+    cursor: pointer;
+}
+
+.barNav {
+    display: flex;
+    flex-direction: row;
+}
+
+.barNav img {
+    cursor: pointer;
+}
+
+.barNav p {
+  color:  #010081;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    gap: 20px;
+}
+
+
+
+.links a {
+    color:  #010081;
+    font-family: "MS Sans Serif";
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.displayedProjects {
+    margin-left: 10px;
+}
