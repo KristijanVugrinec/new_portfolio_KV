@@ -35,6 +35,8 @@
 .barNav {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-top: 2px;
 }
 
 .barNav img {
@@ -64,4 +66,25 @@
 
 .displayedProjects {
     margin-left: 10px;
+}
+
+.barLeftNav {
+    height: 16px;
+    margin-right: 3px;
+    width: 16px;
+}
+
+.barNavigation {
+    width: 90%;
+    height: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px outset rgb(131, 131, 131);
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        width: 80%;
+    }
 }

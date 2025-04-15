@@ -1,0 +1,15 @@
+@media only screen and (max-width: 768px) {
+    .mobileAbout {
+        width: 100%;
+        align-items: center;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .mobileSkills {
+        width: 100%;
+        align-items: center;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}

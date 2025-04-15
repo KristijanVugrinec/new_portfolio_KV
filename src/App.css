@@ -5,6 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
+  overflow-x: hidden;
 }
 
 main {
@@ -12,6 +13,7 @@ main {
   height: auto;
   background-color: rgba(255, 255, 255, 0.911);
   align-items: center;
+  /* justify-content: center; */
   display: flex;
   flex-direction: column;
   border: 4px outset rgb(131, 131, 131);
@@ -22,4 +24,22 @@ h1 {
   font-weight: 400;
   font-size: 280px;
   margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    width: 98vw !important;
+    height: auto !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+  }
+
+  #root {
+    height: auto;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+
 }

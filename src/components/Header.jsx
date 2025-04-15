@@ -2,25 +2,13 @@ import { useState } from 'react'
 import style  from './Header.module.css'
 
 
+import closeButton from '../icons/close.svg'
+import minimizeButton from '../icons/minimize.svg'
 
-const Header = ({changeSize}) => {
 
-    const [minimize,setMinimize] = useState('□')
-    const [isMinimized,setIsMinimzed] = useState(false)
-    
-    const changeIcon = () => {
-        setIsMinimzed(prevState => {
-            const newState = !prevState
-            console.log(newState)
-            return newState
-        })
-        if(isMinimized === false){
-            setMinimize("□□")
-        } else {
-            setMinimize("□")
-        }
-    }
 
+
+const Header = ({changeSize,onClose,minimizeIcon,changeIcon}) => {
 
     return (
         <header>
@@ -29,10 +17,10 @@ const Header = ({changeSize}) => {
                     <p>Portfolio</p>
                 </div>
                 <div>
-                    <div>
-                        <button>_</button>
-                        <button onClick={() =>{changeIcon();changeSize()}}>{minimize}</button>
-                        <button>X</button>
+                    <div className={style.mobile}>
+                        {/* <button><img src={minimizeButton}/></button> */}
+                        <button onClick={() =>{changeIcon();changeSize()}}><img src={minimizeIcon}/></button>
+                        <button onClick={onClose}><img src={closeButton} /></button>
                     </div>
                 </div>
             </div>

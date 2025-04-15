@@ -2,6 +2,7 @@ import style from './Projects.module.css'
 import folderSVG from '../icons/folder.svg'
 import { useEffect } from 'react'
 import { useState } from 'react'
+import lefArrow from '../icons/button-left.svg'
 
 
 const links = [
@@ -51,8 +52,13 @@ const Project = () => {
                 </div>
                 <div className={style.displayedProjects} style={{display:displayProjects}}>
                     <div className={style.barNav}>
-                    <img src={folderSVG} style={{width:'16px'}} onClick={showProjects}/>
+                        <div className={style.barLeftNav}>
+                    <img src={lefArrow} style={{width:'16px'}} onClick={showProjects}/>
+                        </div>
+                        <div className={style.barNavigation}>
+                    <img src={folderSVG} style={{width:'16px'}} />
                     <p>portfolio/projects</p>
+                        </div>
                     </div>
                     <div className={style.links}>
                         {links.map((link,index) => {

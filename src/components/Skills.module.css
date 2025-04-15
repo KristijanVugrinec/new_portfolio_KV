@@ -1,0 +1,41 @@
+.bar {
+    display: flex;
+    flex-direction: row;
+    background-color:#010081;
+    width: 100%;
+    height: 30px;
+    align-items: center;
+}
+
+.bar p {
+    margin-left: 3%;
+}
+
+.main {
+    width: 30%;
+    height: 200px;
+    border: 3px outset rgb(131, 131, 131);
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    height: 75%;
+    justify-content: center;
+    gap: 2%;
+}
+
+.skills img:hover {
+    scale: 1.3;
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .skills img {
+        width: 52px !important;
+    }
+}

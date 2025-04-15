@@ -19,3 +19,16 @@ header {
     align-items: center;
     gap: 90%;
 }
+
+@media only screen and (max-width: 768px) {
+    
+
+
+    .main {
+        gap: 55%;
+    }
+    .mobile {
+        display: flex;
+        flex-direction: row;
+    }
+}
