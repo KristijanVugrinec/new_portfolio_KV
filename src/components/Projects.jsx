@@ -12,12 +12,16 @@ const links = [
     },
     {
         title:"Project2",
-        href:"blabla"
+        href:"https://marvelmaniaquiz.netlify.app/"
     },
     {
         title:"Project3",
-        href:"blabla"
+        href:"https://instantweathernow.netlify.app/"
     },
+    {
+        title:"Other projects",
+        href:"https://github.com/KristijanVugrinec?tab=repositories"
+    }
 ]
 
 const Project = () => {

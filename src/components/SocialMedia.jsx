@@ -27,7 +27,7 @@ const SocialsMedia = () => {
    return (
     <div className={style.main}>
             <div className={style.bar}>
-                <p>Socials Media</p>
+                <p>Social Media</p>
             </div>
             <div className={style.socials}>
             {links.map((link,index) => {
